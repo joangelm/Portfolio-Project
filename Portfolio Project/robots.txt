@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://jemedin7.heyuhnem.com/sitemap.html

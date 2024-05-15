@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Photo Gallery</title>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+            crossorigin="anonymous"
+        />
+        <link href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/sketchy/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="https://jemedin7.heyuhnem.com/assets/css/styles.css" />
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <nav class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+                    <a id="logo" href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                        <span class="fs-4">JoAngel Medina</span>
+                    </a>
+
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a href="https://jemedin7.heyuhnem.com/index.html" class="nav-link link-secondary" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://jemedin7.heyuhnem.com/joangel-medina-direction.html" class="nav-link link-secondary">Direction</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://jemedin7.heyuhnem.com/joangel-medina-photo-gallery.html" class="nav-link active">Photo Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://jemedin7.heyuhnem.com/joangel-medina-youtube.html" class="nav-link link-secondary">Youtube</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://jemedin7.heyuhnem.com/404.html" class="nav-link link-secondary">404</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://jemedin7.heyuhnem.com/sitemap.html" class="nav-link link-secondary">Sitemap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://jemedin7.heyuhnem.com/joangel-medina-contact.html" class="nav-link link-secondary">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="py-5 text-center container">
+                <div class="row py-lg-5">
+                    <div class="col-lg-6 col-md-8 mx-auto">
+                        <h1 class="fw-light">Photo Gallery</h1>
+                        <p class="lead text-muted">
+                            This Photo Gallery page list a couple of pictures I selected. Please enjoy and click on any image to full screen.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="container">
+                <div class="full-img" id="fullImgBox">
+                    <img src="Img1.jpg" alt="image" id="fullImg" />
+                    <span onclick="closeFullImg()">X</span>
+                </div>
+                <div class="img-gallery">
+                    <img src="https://jemedin7.heyuhnem.com/assets/images/Img1.jpg" alt="stars" onclick="openFullImg(this.src)" />
+                    <img src="https://jemedin7.heyuhnem.com/assets/images/Img2.jpg" alt="trees" onclick="openFullImg(this.src)" />
+                    <img src="https://jemedin7.heyuhnem.com/assets/images/Img3.jpg" alt="nature" onclick="openFullImg(this.src)" />
+                    <img src="https://jemedin7.heyuhnem.com/assets/images/Img4.jpg" alt="dog" onclick="openFullImg(this.src)" />
+                    <img src="https://jemedin7.heyuhnem.com/assets/images/Img5.jpg" alt="squirrel" onclick="openFullImg(this.src)" />
+                    <img src="https://jemedin7.heyuhnem.com/assets/images/Img6.jpg" alt="coffee" onclick="openFullImg(this.src)" />
+                    <img src="https://jemedin7.heyuhnem.com/assets/images/Img7.jpg" alt="dragonfly" onclick="openFullImg(this.src)" />
+                    <img src="https://jemedin7.heyuhnem.com/assets/images/Img8.jpg" alt="sky" onclick="openFullImg(this.src)" />
+                </div>
+            </div>
+            <script src="https://jemedin7.heyuhnem.com/assets/js/images.js"></script>
+        </main>
+        <div class="container">
+            <footer class="py-5">
+                <div class="row">
+                    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                        <p>
+                            <strong
+                                >&copy;
+                                <script src="https://ron.viseh.com/CIS2336/Examples/HTML/assets/JS/year.js"></script>
+                                University of Houston</strong
+                            >, All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
